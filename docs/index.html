@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude Coach - Master Claude Code</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Claude Coach</h1>
+    <p class="subtitle">Your personal guide to mastering Claude Code</p>
+  </header>
+
+  <main>
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search tips...">
+      <div class="filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="commands">Commands</button>
+        <button class="filter-btn" data-category="workflows">Workflows</button>
+        <button class="filter-btn" data-category="prompting">Prompting</button>
+        <button class="filter-btn" data-category="configuration">Config</button>
+        <button class="filter-btn" data-category="mcp">MCP</button>
+        <button class="filter-btn" data-category="hooks">Hooks</button>
+        <button class="filter-btn" data-category="shortcuts">Shortcuts</button>
+      </div>
+      <button id="random-btn">Random Tip</button>
+    </div>
+
+    <div id="tips-container"></div>
+  </main>
+
+  <footer>
+    <p>Built to help you get the most out of <a href="https://claude.ai/code" target="_blank">Claude Code</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

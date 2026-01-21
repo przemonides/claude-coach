@@ -1,0 +1,30 @@
+{
+  "name": "claude-coach",
+  "version": "0.1.0",
+  "description": "A personal coaching agent to help learn and master Claude Code",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "claude-coach": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "lint": "eslint src --ext .ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "ai",
+    "coaching",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0"
+  }
+}
