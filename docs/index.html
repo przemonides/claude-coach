@@ -1,39 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Claude Coach - Master Claude Code</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Claude Tinder — find your Claude Code collaborator</title>
+  <meta name="description" content="Swipe through profiles of fellow Claude Code creators and find your next collaboration partner." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Claude Coach</h1>
-    <p class="subtitle">Your personal guide to mastering Claude Code</p>
-  </header>
-
-  <main>
-    <div class="controls">
-      <input type="text" id="search" placeholder="Search tips...">
-      <div class="filters">
-        <button class="filter-btn active" data-category="all">All</button>
-        <button class="filter-btn" data-category="commands">Commands</button>
-        <button class="filter-btn" data-category="workflows">Workflows</button>
-        <button class="filter-btn" data-category="prompting">Prompting</button>
-        <button class="filter-btn" data-category="configuration">Config</button>
-        <button class="filter-btn" data-category="mcp">MCP</button>
-        <button class="filter-btn" data-category="hooks">Hooks</button>
-        <button class="filter-btn" data-category="shortcuts">Shortcuts</button>
+  <div class="app">
+    <header class="top">
+      <div class="brand">
+        Claude Tinder
+        <small>find your Claude Code collaborator</small>
       </div>
-      <button id="random-btn">Random Tip</button>
+      <nav class="nav">
+        <a href="likes.html">♥ Shortlist</a>
+        <a href="new-profile.html">+ Add you</a>
+      </nav>
+    </header>
+
+    <div id="deck" class="deck" aria-live="polite"></div>
+
+    <div class="actions" id="actions">
+      <button class="action pass" id="btn-pass" title="Pass (←)" aria-label="Pass">✕</button>
+      <button class="action like" id="btn-like" title="Like (→)" aria-label="Like">♥</button>
     </div>
 
-    <div id="tips-container"></div>
-  </main>
-
-  <footer>
-    <p>Built to help you get the most out of <a href="https://claude.ai/code" target="_blank">Claude Code</a></p>
-  </footer>
+    <div class="footer">
+      Drag the card · ← pass · → like · No accounts, no server — your shortlist lives in this browser.
+    </div>
+  </div>
 
   <script src="app.js"></script>
 </body>
