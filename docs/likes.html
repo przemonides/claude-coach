@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your shortlist — Claude Tinder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+      <a href="index.html" class="btn">← Back to swiping</a>
+      <a href="new-profile.html" class="btn primary">+ Add your profile</a>
+    </header>
+    <h1>Your shortlist</h1>
+    <p class="lede">
+      Claude Tinder is serverless, so there's no two-sided match — these are the people you liked.
+      Reach out via their public contact and start a conversation.
+    </p>
+
+    <div id="list" class="list"></div>
+
+    <div class="row-tools" style="margin-top:24px;">
+      <button class="btn danger" id="reset">Reset all swipes</button>
+    </div>
+  </div>
+  <script src="likes.js"></script>
+</body>
+</html>

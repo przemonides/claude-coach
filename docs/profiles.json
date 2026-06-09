@@ -1,0 +1,98 @@
+[
+  {
+    "id": "ada-berlin",
+    "name": "Ada",
+    "handle": "@ada",
+    "location": "Berlin",
+    "bio": "Backend engineer who fell in love with agentic workflows.",
+    "workingOn": "A self-hosted MCP server that exposes a Postgres schema as a tool surface for Claude.",
+    "stack": ["TypeScript", "Postgres", "MCP", "Deno"],
+    "interests": ["agents", "databases", "developer-tooling"],
+    "lookingFor": "Someone to pair on MCP server design and battle-test it against real codebases.",
+    "contact": "github.com/ada"
+  },
+  {
+    "id": "rin-tokyo",
+    "name": "Rin",
+    "handle": "@rin",
+    "location": "Tokyo",
+    "bio": "Frontend dev shipping side projects every weekend with Claude Code.",
+    "workingOn": "A Raycast-style command palette that pipes natural language into Claude subagents.",
+    "stack": ["React", "Tauri", "Rust", "Vite"],
+    "interests": ["UX", "subagents", "keyboard-driven UIs"],
+    "lookingFor": "A backend buddy to design the local agent runtime with me.",
+    "contact": "github.com/rin"
+  },
+  {
+    "id": "marco-sp",
+    "name": "Marco",
+    "handle": "@marco",
+    "location": "São Paulo",
+    "bio": "SRE turned indie hacker. I automate everything I can.",
+    "workingOn": "Claude-driven incident triage bot that reads Grafana alerts and proposes runbooks.",
+    "stack": ["Python", "Kubernetes", "Prometheus", "LangGraph"],
+    "interests": ["observability", "incident-response", "hooks"],
+    "lookingFor": "Co-maintainer who cares about reliability and wants to ship to real on-call teams.",
+    "contact": "github.com/marco"
+  },
+  {
+    "id": "priya-blr",
+    "name": "Priya",
+    "handle": "@priya",
+    "location": "Bangalore",
+    "bio": "ML engineer exploring evals and red-teaming for coding agents.",
+    "workingOn": "An eval harness that scores Claude Code patches against a corpus of real-world bug reports.",
+    "stack": ["Python", "PyTorch", "Anthropic SDK", "DuckDB"],
+    "interests": ["evals", "benchmarks", "agent-safety"],
+    "lookingFor": "Someone with strong systems chops to scale the harness to 10k+ tasks.",
+    "contact": "github.com/priya"
+  },
+  {
+    "id": "jules-mtl",
+    "name": "Jules",
+    "handle": "@jules",
+    "location": "Montréal",
+    "bio": "Designer-engineer. I draw with code.",
+    "workingOn": "An interactive playground that visualizes how Claude plans multi-step tool use.",
+    "stack": ["SvelteKit", "D3", "WebGL", "TypeScript"],
+    "interests": ["dataviz", "explainability", "education"],
+    "lookingFor": "A teaching partner — let's make Claude internals less mysterious.",
+    "contact": "github.com/jules"
+  },
+  {
+    "id": "sam-eu",
+    "name": "Sam",
+    "handle": "@sam",
+    "location": "Remote / EU",
+    "bio": "Game dev moonlighting as an AI tinkerer.",
+    "workingOn": "Procedural quest generator where Claude writes branching dialogue compiled to Godot.",
+    "stack": ["Godot", "GDScript", "Go", "SQLite"],
+    "interests": ["games", "narrative", "structured-output"],
+    "lookingFor": "Writer or narrative designer who codes a little.",
+    "contact": "github.com/sam"
+  },
+  {
+    "id": "noor-dxb",
+    "name": "Noor",
+    "handle": "@noor",
+    "location": "Dubai",
+    "bio": "Solo founder bootstrapping a legal-tech startup.",
+    "workingOn": "Claude-powered clause review tool with deterministic redlining and audit trails.",
+    "stack": ["Next.js", "Prisma", "Postgres", "Tailwind"],
+    "interests": ["legal-tech", "compliance", "RAG"],
+    "lookingFor": "Technical co-founder who's been close to a regulated industry.",
+    "contact": "github.com/noor"
+  },
+  {
+    "id": "kai-seoul",
+    "name": "Kai",
+    "handle": "@kai",
+    "location": "Seoul",
+    "bio": "Open-source maintainer. Hooks enthusiast.",
+    "workingOn": "A library of opinionated Claude Code hooks — auto-format, auto-test, auto-commit.",
+    "stack": ["Bash", "TypeScript", "Nix", "Just"],
+    "interests": ["dx", "hooks", "automation"],
+    "lookingFor": "Contributors who love polishing developer experience.",
+    "contact": "github.com/kai"
+  }
+]

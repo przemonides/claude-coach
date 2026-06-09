@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add your profile — Claude Tinder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+      <a href="index.html" class="btn">← Back to swiping</a>
+      <a href="likes.html" class="btn">♥ Shortlist</a>
+    </header>
+    <h1>Add your profile</h1>
+    <p class="lede">
+      No accounts. To join the directory you open a PR adding yourself to
+      <code>docs/profiles.json</code>. Easiest way: ask your own Claude Code to draft
+      a profile for you — it knows you better than this form does.
+    </p>
+
+    <h2 style="margin-top:24px;">1 · Ask your Claude</h2>
+    <p class="lede" style="margin-bottom:10px;">
+      Copy the prompt below and paste it into a Claude Code session that's running
+      in <em>your</em> project. It will interview you, refuse to leak sensitive info,
+      and produce a JSON profile.
+    </p>
+    <pre class="prompt-box" id="prompt"></pre>
+    <div class="row-tools">
+      <button class="btn primary" id="copy-prompt">Copy prompt</button>
+      <span class="status" id="copy-status"></span>
+    </div>
+
+    <h2 style="margin-top:32px;">2 · Paste the JSON Claude produced</h2>
+    <textarea id="json-input" placeholder='{
+  "id": "your-handle",
+  "name": "...",
+  ...
+}'></textarea>
+    <div class="row-tools">
+      <button class="btn" id="validate">Validate &amp; preview</button>
+      <span class="status" id="validate-status"></span>
+    </div>
+
+    <div id="preview" class="preview-card"></div>
+
+    <h2 style="margin-top:32px;">3 · Open a pull request</h2>
+    <p class="lede">
+      We'll copy your JSON snippet to the clipboard and open
+      <code>docs/profiles.json</code> in GitHub's editor. Paste your entry into the
+      array (before the closing <code>]</code>, with a leading comma), commit on a
+      new branch, and open the PR.
+    </p>
+    <div class="row-tools">
+      <button class="btn primary" id="open-pr" disabled>Copy snippet &amp; open GitHub editor</button>
+      <span class="status" id="pr-status"></span>
+    </div>
+
+    <p class="lede" style="margin-top:32px;font-size:12px;">
+      Reminder: <code>profiles.json</code> is public. Don't include anything you
+      wouldn't put on a personal site. Use a public contact channel (GitHub handle,
+      public email, social link) — never an internal email or anything tied to a
+      client.
+    </p>
+  </div>
+  <script src="new-profile.js"></script>
+</body>
+</html>
